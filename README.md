@@ -30,7 +30,7 @@ To Run: npm start
 //API DOCUMENTATION
 
 //Authentication Routes
-1. POST /users/register
+1. POST api/users/register
 
 Body
 {
@@ -45,7 +45,7 @@ Response
 }
 
 
-2. POST /users/login
+2. POST api/users/login
 
 Body
 {
@@ -68,7 +68,7 @@ Response
 
 //Task Routes (Protected)   (USE TOKEN)
 
-3. POST /tasks
+3. POST api/tasks
 
 Body
 {
@@ -86,7 +86,7 @@ Response
 
 4. Get All Tasks (with Filters, Sorting, Pagination)
 
-GET /tasks?page=1&limit=10&status=Pending&priority=High&sortBy=createdAt&order=desc
+GET api/tasks?page=1&limit=10&status=Pending&priority=High&sortBy=createdAt&order=desc
 
 Response
 {
@@ -98,7 +98,7 @@ Response
 
 
 
-5. GET /tasks/:id
+5. GET api/tasks/:id
 
 Response
 {
@@ -107,7 +107,7 @@ Response
 
 
 
-6. PUT /tasks/:id
+6. PUT api/tasks/:id
 
 Body
 {
@@ -124,7 +124,7 @@ Response
 
 
 
-6. DELETE /tasks/:id
+6. DELETE api/tasks/:id
 
 Response
 {
